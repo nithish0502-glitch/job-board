@@ -1,0 +1,61 @@
+/* JobDetail.css */
+
+.job-detail-container {
+  max-width: 700px;
+  margin: 50px auto;
+  background-color: #ffffff;
+  padding: 32px 36px;
+  border-radius: 14px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  font-family: 'Inter', sans-serif;
+  animation: fadeInContent 0.6s ease forwards;
+  opacity: 0;
+}
+
+@keyframes fadeInContent {
+  to {
+    opacity: 1;
+  }
+}
+
+.job-detail-title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #1e293b;
+}
+
+.job-detail-company {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #3b82f6;
+}
+
+.job-detail-description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #475569;
+  white-space: pre-wrap; /* keeps formatting for multiline descriptions */
+}
+
+/* Loading state styling */
+
+.job-detail-loading {
+  max-width: 700px;
+  margin: 100px auto;
+  font-size: 1.25rem;
+  color: #64748b;
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+  animation: pulseLoading 1.5s ease infinite;
+}
+
+@keyframes pulseLoading {
+  0%, 100% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 1;
+  }
+}
