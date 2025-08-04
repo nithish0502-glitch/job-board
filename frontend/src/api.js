@@ -1,4 +1,4 @@
-const BASE_URL = "https://mpqwmt-3000.csb.app"; // Replace with real backend URL
+const BASE_URL = "https://job-board-7m6c.onrender.com"; // Replace with real backend URL
 
 export const fetchJobs = async () => {
   const res = await fetch(`${BASE_URL}/jobs`);
