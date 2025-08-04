@@ -43,9 +43,9 @@ function AddJob() {
 
         <textarea name="description" value={form.description} onChange={handleChange} placeholder="Description" className="add-job-textarea" required />
 
-        <input name="location" value={form.location} onChange={handleChange} placeholder="Location (e.g., Remote, New York)" className="add-job-input" />
+        <input name="location" value={form.location} onChange={handleChange} placeholder="Location (e.g., Remote, Chennai)" className="add-job-input" />
 
-        <input name="salary" value={form.salary} onChange={handleChange} placeholder="Salary Range (e.g., $60,000 - $80,000)" className="add-job-input" />
+        <input name="salary" value={form.salary} onChange={handleChange} placeholder="Salary Range(LPA)" className="add-job-input" />
 
         <select name="jobType" value={form.jobType} onChange={handleChange} className="add-job-input">
           <option value="">Select Job Type</option>
