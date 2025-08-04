@@ -29,7 +29,7 @@ const jobSchema = new mongoose.Schema({
   applyLink: { type: String },
 }, { timestamps: true });
 
-const Job = mongoose.model("Job", JobSchema);
+const Job = mongoose.model("Job", jobSchema);
 
 // REST API
 app.get("/jobs", async (req, res) => {
