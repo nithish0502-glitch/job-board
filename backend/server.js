@@ -16,11 +16,18 @@ mongoose
   .catch((err) => console.error("Mongo error:", err));
 
 // Mongoose schema
-const JobSchema = new mongoose.Schema({
-  title: String,
-  company: String,
-  description: String,
-});
+const jobSchema = new mongoose.Schema({
+  title: { type: String, required: true },
+  company: { type: String, required: true },
+  description: { type: String, required: true },
+
+  location: { type: String },
+  salary: { type: String },
+  jobType: { type: String, enum: ['Full-time', 'Part-time', 'Contract', 'Internship'] },
+  experienceLevel: { type: String, enum: ['Entry', 'Mid', 'Senior'] },
+  tags: [String], // Array of strings
+  applyLink: { type: String },
+}, { timestamps: true });
 
 const Job = mongoose.model("Job", JobSchema);
 
